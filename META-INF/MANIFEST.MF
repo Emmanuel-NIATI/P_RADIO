@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Structure
+Implementation-Title: Structure
+Implementation-Version: 11.0.15
+Specification-Vendor: Structure
+Created-By: Structure
+Specification-Title: Java Platform API Specification
+Specification-Version: 11.0.15

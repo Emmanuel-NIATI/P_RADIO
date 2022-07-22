@@ -1,0 +1,27 @@
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+
+
+
+
+
+sudo apt-get install xscreensaver
+	-> disabled
+
+sudo apt-get install openssh-server
+	-> cd /etc/ssh
+	-> sudo nano sshd_config
+	-> sudo systemctl enable --now ssh
+	-> sudo systemctl restart ssh
+	-> sudo ssh -p 22 radio@127.0.0.1
+
+sudo ufw allow 20/tcp	// Réservé
+sudo ufw allow 21/tcp	// FTP
+sudo ufw allow 22/tcp	// SSH
+sudo ufw status
+
+
+
