@@ -50,12 +50,12 @@ public class JPanelRadio extends JPanelStructure implements ActionListener
 		this.setSize(720, 480);
 		this.setOpaque( false );
 		
-		BorderLayout borderLayoutPanelRadio = new BorderLayout();
+		BorderLayout borderLayoutRadio = new BorderLayout();
 
-		borderLayoutPanelRadio.setHgap(0);
-		borderLayoutPanelRadio.setVgap(0);
+		borderLayoutRadio.setHgap(0);
+		borderLayoutRadio.setVgap(0);
 		
-		this.setLayout(borderLayoutPanelRadio);
+		this.setLayout(borderLayoutRadio);
 		
 		// Gestion du Panel Radio Nord
 		jPanelRadioNorth = new JPanelRadioNorth();
@@ -65,14 +65,14 @@ public class JPanelRadio extends JPanelStructure implements ActionListener
 		jPanelRadioNorth.setOpaque( false );
 				
 		// Gestion de la disposition du Panel Radio Nord
-		FlowLayout flowLayoutPanelRadioNorth = new FlowLayout();
+		FlowLayout flowLayoutRadioNorth = new FlowLayout();
 
-		flowLayoutPanelRadioNorth.setAlignment( FlowLayout.CENTER );
+		flowLayoutRadioNorth.setAlignment( FlowLayout.CENTER );
 		
-		flowLayoutPanelRadioNorth.setHgap(10);
-		flowLayoutPanelRadioNorth.setVgap(10);
+		flowLayoutRadioNorth.setHgap(10);
+		flowLayoutRadioNorth.setVgap(10);
 		
-		jPanelRadioNorth.setLayout(flowLayoutPanelRadioNorth);
+		jPanelRadioNorth.setLayout(flowLayoutRadioNorth);
 		
 		// Gestion des boutons modaux
 		
@@ -96,10 +96,10 @@ public class JPanelRadio extends JPanelStructure implements ActionListener
 		jButtonRadioClientTrack.setMargin( new Insets(0, 0, 0, 0) );
 		jButtonRadioClientTrack.setIcon( new ImageIcon( this.getClass().getResource("btn_track.png") ) );
 
-		jPanelRadioNorth.add( jButtonRadioClientClock, flowLayoutPanelRadioNorth );
-		jPanelRadioNorth.add( jButtonRadioClientAlarm, flowLayoutPanelRadioNorth );
-		jPanelRadioNorth.add( jButtonRadioClientRadio, flowLayoutPanelRadioNorth );
-		jPanelRadioNorth.add( jButtonRadioClientTrack, flowLayoutPanelRadioNorth );
+		jPanelRadioNorth.add( jButtonRadioClientClock, flowLayoutRadioNorth );
+		jPanelRadioNorth.add( jButtonRadioClientAlarm, flowLayoutRadioNorth );
+		jPanelRadioNorth.add( jButtonRadioClientRadio, flowLayoutRadioNorth );
+		jPanelRadioNorth.add( jButtonRadioClientTrack, flowLayoutRadioNorth );
 		
 		// Gestion de la partie modale
 		jButtonRadioClientClock.addActionListener( this );

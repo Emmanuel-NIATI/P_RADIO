@@ -5,16 +5,13 @@ import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Font;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.border.Border;
-import javax.swing.border.TitledBorder;
 
 import fr.radio.ihm.swing.panelradio.client.clock.screen.analogic.JPanelRadioClientClockScreenAnalogic;
 import fr.radio.ihm.swing.panelradio.client.clock.screen.numeric.JPanelRadioClientClockScreenNumeric;
@@ -47,12 +44,12 @@ public class JPanelRadioClientClock extends JPanelStructure implements ActionLis
 		this.setPreferredSize( new Dimension( 720, 420) );
 		this.setOpaque( false );
 
-		BorderLayout borderLayoutPanelRadioClientClock = new BorderLayout();
+		BorderLayout borderLayoutRadioClientClock = new BorderLayout();
 
-		borderLayoutPanelRadioClientClock.setHgap(0);
-		borderLayoutPanelRadioClientClock.setVgap(0);
+		borderLayoutRadioClientClock.setHgap(0);
+		borderLayoutRadioClientClock.setVgap(0);
 		
-		this.setLayout(borderLayoutPanelRadioClientClock);
+		this.setLayout(borderLayoutRadioClientClock);
 		
 		// Gestion du Panel Radio Client Clock Screen
 		jPanelRadioClientClockScreen = new JPanelRadioClientClockScreen();
@@ -88,14 +85,14 @@ public class JPanelRadioClientClock extends JPanelStructure implements ActionLis
 		jPanelRadioClientClockSouth.setOpaque( false );
 		
 		// Gestion de la disposition du Panel Radio Client Clock South
-		FlowLayout flowLayoutPanelRadioClientClockSouth = new FlowLayout();
+		FlowLayout flowLayoutRadioClientClockSouth = new FlowLayout();
 
-		flowLayoutPanelRadioClientClockSouth.setAlignment( FlowLayout.CENTER );
+		flowLayoutRadioClientClockSouth.setAlignment( FlowLayout.CENTER );
 		
-		flowLayoutPanelRadioClientClockSouth.setHgap(10);
-		flowLayoutPanelRadioClientClockSouth.setVgap(10);
+		flowLayoutRadioClientClockSouth.setHgap(10);
+		flowLayoutRadioClientClockSouth.setVgap(10);
 		
-		jPanelRadioClientClockSouth.setLayout(flowLayoutPanelRadioClientClockSouth);
+		jPanelRadioClientClockSouth.setLayout(flowLayoutRadioClientClockSouth);
 		
 		
 		// Gestion des boutons modaux
@@ -110,8 +107,8 @@ public class JPanelRadioClientClock extends JPanelStructure implements ActionLis
 		jButtonRadioClientClockNumeric.setMargin( new Insets(0, 0, 0, 0) );
 		jButtonRadioClientClockNumeric.setIcon( new ImageIcon( this.getClass().getResource("btn_numeric.png") ) );
 
-		jPanelRadioClientClockSouth.add( jButtonRadioClientClockAnalogic, flowLayoutPanelRadioClientClockSouth );
-		jPanelRadioClientClockSouth.add( jButtonRadioClientClockNumeric, flowLayoutPanelRadioClientClockSouth );
+		jPanelRadioClientClockSouth.add( jButtonRadioClientClockAnalogic, flowLayoutRadioClientClockSouth );
+		jPanelRadioClientClockSouth.add( jButtonRadioClientClockNumeric, flowLayoutRadioClientClockSouth );
 
 		// Gestion de la partie modale
 		jButtonRadioClientClockAnalogic.addActionListener( this );
