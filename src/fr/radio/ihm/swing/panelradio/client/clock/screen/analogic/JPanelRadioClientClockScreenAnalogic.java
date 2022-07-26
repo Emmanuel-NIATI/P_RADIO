@@ -30,9 +30,9 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 		super();
 		
 		// Gestion de l'apparence du Panel Radio Client Clock Screen Analogic
-		this.setPreferredSize( new Dimension( 720, 360) );
+		this.setPreferredSize( new Dimension( 700, 340) );
 		this.setOpaque( false );
-				
+
 		// Gestion de la disposition du panel
 		gridBagLayoutRadioClientClockScreenAnalogic = new GridBagLayout();
 		this.setLayout( gridBagLayoutRadioClientClockScreenAnalogic );
@@ -41,7 +41,7 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 				
 		jLabelRadioClientClockScreenAnalogic_00_00 = new JLabel();
 		
-		jLabelRadioClientClockScreenAnalogic_00_00.setIcon( seconde("00", 1) );
+		// jLabelRadioClientClockScreenAnalogic_00_00.setIcon( seconde("00", 1) );
 		
 		gridBagConstraintsRadioClientClockScreenAnalogic.fill = GridBagConstraints.HORIZONTAL;
 		gridBagConstraintsRadioClientClockScreenAnalogic.gridwidth = 3;
@@ -54,151 +54,6 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 		ThreadTimeRadioClientClockScreenAnalogic threadTimeRadioClientClockScreenAnalogic = new ThreadTimeRadioClientClockScreenAnalogic();
 		threadTimeRadioClientClockScreenAnalogic.start();
 		
-	}
-	
-	// Génération transparence
-	private ImageIcon transparent( ImageIcon imageIcon )
-	{
-		
-		Image image = imageIcon.getImage();
-		
-		BufferedImage bufferedImage = new BufferedImage(  image.getWidth( null ), image.getHeight( null ), BufferedImage.TYPE_INT_ARGB );    
-
-		Graphics2D graphics2D = bufferedImage.createGraphics();
-		graphics2D.drawImage(image, 0, 0, null);
-		graphics2D.dispose();
-		
-		for( int c = 0; c < imageIcon.getIconWidth(); c++ )
-		{
-
-			for( int l = 0; l < imageIcon.getIconHeight(); l++ )
-			{
-
-				int rgb = bufferedImage.getRGB(c, l);
-
-				if( rgb != -16777216 )
-				{
-
-					bufferedImage.setRGB(c,  l, 16777215);
-				}
-
-			}
-
-		}
-
-		ImageIcon imageIconTransparent = new ImageIcon( bufferedImage );
-
-		return imageIconTransparent;
-
-	}
-	
-	// Génération couleur
-	private ImageIcon colorize( ImageIcon imageIcon)
-	{
-
-		Image image = imageIcon.getImage();
-		
-		BufferedImage bufferedImage = new BufferedImage(  image.getWidth( null ), image.getHeight( null ), BufferedImage.TYPE_INT_ARGB );    
-
-		Graphics2D graphics2D = bufferedImage.createGraphics();
-		graphics2D.drawImage(image, 0, 0, null);
-		graphics2D.dispose();
-
-		for( int c = 0; c < imageIcon.getIconWidth(); c++ )
-		{
-
-			for( int l = 0; l < imageIcon.getIconHeight(); l++ )
-			{
-
-				int rgb = bufferedImage.getRGB(c, l);
-				
-				if( rgb == -16777216 )
-				{
-
-					bufferedImage.setRGB( c,  l, getForeground().getRGB() );
-				}
-
-			}
-
-		}
-		
-		ImageIcon imageIconColorized = new ImageIcon( bufferedImage );
-
-		return imageIconColorized;
-		
-	}
-	
-	// Génération taille
-	private ImageIcon resize( ImageIcon imageIcon, int size )
-	{
-
-		Image image = imageIcon.getImage();
-		
-		BufferedImage bufferedImageOriginal = new BufferedImage(  image.getWidth( null ), image.getHeight( null ), BufferedImage.TYPE_INT_ARGB );    
-
-		Graphics2D graphics2D = bufferedImageOriginal.createGraphics();
-		graphics2D.drawImage(image, 0, 0, null);
-		graphics2D.dispose();
-
-		int widthOriginal = bufferedImageOriginal.getWidth();
-		int heightOriginal = bufferedImageOriginal.getHeight();
-		
-		int type = bufferedImageOriginal.getType();
-		
-		int widthSized = widthOriginal * size;
-		int heightSized = heightOriginal * size;
-
-		BufferedImage bufferedImageSized = new BufferedImage(widthSized, heightSized, type);		
-		
-		for (int ho = 0; ho < heightOriginal; ho++)
-		{
-
-			for (int hv = 0; hv < size; hv++)
-			{
-
-				for (int wo = 0; wo < widthOriginal; wo++)
-				{
-
-					for (int wv = 0; wv < size; wv++)
-					{
-
-						int ws = wo * size + wv;
-						int hs = ho * size + hv;
-						
-						bufferedImageSized.setRGB( ws, hs, bufferedImageOriginal.getRGB( wo, ho) );
-
-					}
-
-				}
-
-			}
-
-		}
-
-		ImageIcon imageIconSized = new ImageIcon( bufferedImageSized );
-
-		return imageIconSized;
-
-	}
-	
-	// Génération seconde
-	private ImageIcon seconde( String s, int size )
-	{
-		
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_720x360_seconde_" + s + ".png") );
-		
-		imageIcon = transparent( imageIcon );
-		imageIcon = colorize( imageIcon );
-		
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-
-		return imageIcon;
-
 	}
 	
 	// Mise à l'heure
@@ -272,7 +127,7 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 				String month_ = simpleDateFormatMonth.format(date);
 				String year_ = simpleDateFormatYear.format(date);
 				
-				setTime( hour_, minute_, seconde_, dayOfWeek_, day_, month_, year_);
+				// setTime( hour_, minute_, seconde_, dayOfWeek_, day_, month_, year_);
 				
 				this.pause( 200 );
 			}
