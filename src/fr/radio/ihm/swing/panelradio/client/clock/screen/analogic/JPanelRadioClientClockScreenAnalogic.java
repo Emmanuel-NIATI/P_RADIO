@@ -41,7 +41,7 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 				
 		jLabelRadioClientClockScreenAnalogic_00_00 = new JLabel();
 		
-		// jLabelRadioClientClockScreenAnalogic_00_00.setIcon( seconde("00", 1) );
+		jLabelRadioClientClockScreenAnalogic_00_00.setIcon( seconde("00", 1) );
 		
 		gridBagConstraintsRadioClientClockScreenAnalogic.fill = GridBagConstraints.HORIZONTAL;
 		gridBagConstraintsRadioClientClockScreenAnalogic.gridwidth = 3;

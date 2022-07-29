@@ -16,12 +16,12 @@ public abstract class JPanelStructure extends JPanel
 
 	private Image image;
 	
-	protected Font fontConsolasItalicBold008;
-	protected Font fontConsolasItalicBold009;
-	protected Font fontConsolasItalicBold010;
-	protected Font fontConsolasItalicBold012;
-	protected Font fontConsolasItalicBold014;
-	
+	protected static final Font fontConsolasItalicBold008 = new Font("Consolas", Font.ITALIC | Font.BOLD, 8);
+	protected static final Font fontConsolasItalicBold009 = new Font("Consolas", Font.ITALIC | Font.BOLD, 9);
+	protected static final Font fontConsolasItalicBold010 = new Font("Consolas", Font.ITALIC | Font.BOLD, 10);
+	protected static final Font fontConsolasItalicBold012 = new Font("Consolas", Font.ITALIC | Font.BOLD, 12);
+	protected static final Font fontConsolasItalicBold014 = new Font("Consolas", Font.ITALIC | Font.BOLD, 14);
+
 	protected static final Color COLOR_GRAY = Color.GRAY;
 	protected static final Color COLOR_WHITE = Color.WHITE;
 	protected static final Color COLOR_GREEN = Color.GREEN;
@@ -33,13 +33,6 @@ public abstract class JPanelStructure extends JPanel
 	{
 
 		this.image = null;
-		
-		// Gestion des polices de caractères
-		fontConsolasItalicBold008 = new Font("Consolas", Font.ITALIC | Font.BOLD, 8);
-		fontConsolasItalicBold009 = new Font("Consolas", Font.ITALIC | Font.BOLD, 9);
-		fontConsolasItalicBold010 = new Font("Consolas", Font.ITALIC | Font.BOLD, 10);
-		fontConsolasItalicBold012 = new Font("Consolas", Font.ITALIC | Font.BOLD, 12);
-		fontConsolasItalicBold014 = new Font("Consolas", Font.ITALIC | Font.BOLD, 14);
 		
 	}
 	
@@ -95,7 +88,7 @@ public abstract class JPanelStructure extends JPanel
 	}
 	
 	// Génération couleur
-	protected ImageIcon colorize( ImageIcon imageIcon)
+	protected ImageIcon recolorize( ImageIcon imageIcon, int e, int s)
 	{
 
 		Image image = imageIcon.getImage();
@@ -114,19 +107,19 @@ public abstract class JPanelStructure extends JPanel
 
 				int rgb = bufferedImage.getRGB(c, l);
 				
-				if( rgb == -16777216 )
+				if( rgb == e )
 				{
 
-					bufferedImage.setRGB( c,  l, getForeground().getRGB() );
+					bufferedImage.setRGB( c,  l, s );
 				}
 
 			}
 
 		}
 		
-		ImageIcon imageIconColorized = new ImageIcon( bufferedImage );
+		ImageIcon imageIconRecolorized = new ImageIcon( bufferedImage );
 
-		return imageIconColorized;
+		return imageIconRecolorized;
 		
 	}
 	
@@ -189,9 +182,6 @@ public abstract class JPanelStructure extends JPanel
 		
 		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("spacer_" + c + ".png") );
 		
-		imageIcon = transparent( imageIcon );
-		imageIcon = colorize( imageIcon );
-		
 		if( size < 4 )
 		{
 		
@@ -208,9 +198,6 @@ public abstract class JPanelStructure extends JPanel
 	{
 		
 		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("number_" + c + ".png") );
-		
-		imageIcon = transparent( imageIcon );
-		imageIcon = colorize( imageIcon );
 		
 		if( size < 4 )
 		{
@@ -229,9 +216,6 @@ public abstract class JPanelStructure extends JPanel
 		
 		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("letter_" + c + ".png") );
 
-		imageIcon = transparent( imageIcon );
-		imageIcon = colorize( imageIcon );
-
 		if( size < 4 )
 		{
 		
@@ -246,12 +230,9 @@ public abstract class JPanelStructure extends JPanel
 	// Génération seconde
 	protected ImageIcon seconde( String s, int size )
 	{
-		
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_720x360_seconde_" + s + ".png") );
-		
-		imageIcon = transparent( imageIcon );
-		imageIcon = colorize( imageIcon );
-		
+
+		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_700x340_seconde_" + s + ".png") );
+
 		if( size < 4 )
 		{
 		
