@@ -227,6 +227,40 @@ public abstract class JPanelStructure extends JPanel
 
 	}
 	
+	// Génération hour
+	protected ImageIcon hour( String hour_, String minute_, int size )
+	{
+
+		// ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_700x340_hour_" + s + ".png") );
+
+		if( size < 4 )
+		{
+		
+			imageIcon = resize( imageIcon, size );
+			
+		}
+
+		return imageIcon;
+
+	}
+	
+	// Génération minute	
+	protected ImageIcon minute( String minute_, int size )
+	{
+
+		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_700x340_minute_" + minute_ + ".png") );
+
+		if( size < 4 )
+		{
+		
+			imageIcon = resize( imageIcon, size );
+			
+		}
+
+		return imageIcon;
+
+	}
+	
 	// Génération seconde
 	protected ImageIcon seconde( String s, int size )
 	{

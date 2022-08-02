@@ -127,7 +127,7 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 				String month_ = simpleDateFormatMonth.format(date);
 				String year_ = simpleDateFormatYear.format(date);
 				
-				// setTime( hour_, minute_, seconde_, dayOfWeek_, day_, month_, year_);
+				setTime( hour_, minute_, seconde_, dayOfWeek_, day_, month_, year_);
 				
 				this.pause( 200 );
 			}
