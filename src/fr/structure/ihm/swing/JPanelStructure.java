@@ -228,6 +228,7 @@ public abstract class JPanelStructure extends JPanel
 	}
 	
 	// Génération hour
+	/*
 	protected ImageIcon hour( String hour_, String minute_, int size )
 	{
 
@@ -243,6 +244,8 @@ public abstract class JPanelStructure extends JPanel
 		return imageIcon;
 
 	}
+	*/
+	
 	
 	// Génération minute	
 	protected ImageIcon minute( String minute_, int size )

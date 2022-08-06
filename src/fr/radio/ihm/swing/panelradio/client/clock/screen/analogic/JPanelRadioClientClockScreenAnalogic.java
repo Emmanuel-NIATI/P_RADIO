@@ -33,6 +33,13 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 		this.setPreferredSize( new Dimension( 700, 340) );
 		this.setOpaque( false );
 
+		
+		
+		
+		
+		
+		
+		
 		// Gestion de la disposition du panel
 		gridBagLayoutRadioClientClockScreenAnalogic = new GridBagLayout();
 		this.setLayout( gridBagLayoutRadioClientClockScreenAnalogic );

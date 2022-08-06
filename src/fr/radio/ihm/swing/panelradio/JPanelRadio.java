@@ -45,11 +45,11 @@ public class JPanelRadio extends JPanelStructure implements ActionListener
 	{
 
 		super();
-		
+
 		// Gestion de l'apparence du Panel Radio
 		this.setSize(720, 480);
 		this.setOpaque( false );
-		
+				
 		BorderLayout borderLayoutRadio = new BorderLayout();
 
 		borderLayoutRadio.setHgap(0);
