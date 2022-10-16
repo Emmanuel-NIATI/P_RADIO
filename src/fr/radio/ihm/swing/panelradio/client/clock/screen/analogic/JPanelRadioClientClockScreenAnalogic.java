@@ -32,13 +32,6 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 		// Gestion de l'apparence du Panel Radio Client Clock Screen Analogic
 		this.setPreferredSize( new Dimension( 700, 340) );
 		this.setOpaque( false );
-
-		
-		
-		
-		
-		
-		
 		
 		// Gestion de la disposition du panel
 		gridBagLayoutRadioClientClockScreenAnalogic = new GridBagLayout();
@@ -48,7 +41,7 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 				
 		jLabelRadioClientClockScreenAnalogic_00_00 = new JLabel();
 		
-		jLabelRadioClientClockScreenAnalogic_00_00.setIcon( seconde("00", 1) );
+		jLabelRadioClientClockScreenAnalogic_00_00.setIcon( resize( recolorize( seconde("00"), -1, 16777215), 1) );
 		
 		gridBagConstraintsRadioClientClockScreenAnalogic.fill = GridBagConstraints.HORIZONTAL;
 		gridBagConstraintsRadioClientClockScreenAnalogic.gridwidth = 3;
@@ -81,8 +74,8 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 		String yearC = year_.substring(1, 2);
 		String yearD = year_.substring(2, 3);
 		String yearU = year_.substring(3, 4);
-				
-		jLabelRadioClientClockScreenAnalogic_00_00.setIcon( seconde(seconde_, 1) );
+		
+		jLabelRadioClientClockScreenAnalogic_00_00.setIcon( resize( recolorize( seconde(seconde_), -1, 16777215), 1) );		
 		
 	}
 	

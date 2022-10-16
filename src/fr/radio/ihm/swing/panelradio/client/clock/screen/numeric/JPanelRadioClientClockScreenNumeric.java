@@ -94,39 +94,39 @@ public class JPanelRadioClientClockScreenNumeric extends JPanelStructure
 		jLabelRadioClientClockScreenNumeric_14_05 = new JLabel();
 		jLabelRadioClientClockScreenNumeric_15_05 = new JLabel();
 
-		jLabelRadioClientClockScreenNumeric_00_00.setIcon( number('1', 3) );
-		jLabelRadioClientClockScreenNumeric_03_00.setIcon( number('1', 3) );
-		jLabelRadioClientClockScreenNumeric_06_00.setIcon( spacer('2', 3) );
-		jLabelRadioClientClockScreenNumeric_09_00.setIcon( number('3', 3) );
-		jLabelRadioClientClockScreenNumeric_12_00.setIcon( number('5', 3) );
-		jLabelRadioClientClockScreenNumeric_15_00.setIcon( spacer('2', 2) );
-		jLabelRadioClientClockScreenNumeric_17_00.setIcon( number('1', 2) );
-		jLabelRadioClientClockScreenNumeric_19_00.setIcon( number('0', 2) );
+		jLabelRadioClientClockScreenNumeric_00_00.setIcon( resize( recolorize( number('1'), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_03_00.setIcon( resize( recolorize( number('1'), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_06_00.setIcon( resize( recolorize( spacer('2'), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_09_00.setIcon( resize( recolorize( number('3'), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_12_00.setIcon( resize( recolorize( number('5'), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_15_00.setIcon( resize( recolorize( spacer('2'), -1, 16777215), 2) );
+		jLabelRadioClientClockScreenNumeric_17_00.setIcon( resize( recolorize( number('1'), -1, 16777215), 2) );
+		jLabelRadioClientClockScreenNumeric_19_00.setIcon( resize( recolorize( number('0'), -1, 16777215), 2) );
+				
+		jLabelRadioClientClockScreenNumeric_00_04.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
                                                  
-		jLabelRadioClientClockScreenNumeric_00_04.setIcon( spacer('0', 1) );
-                                                 
-		jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter('M', 1) );
-		jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter('E', 1) );
-		jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter('R', 1) );
-		jLabelRadioClientClockScreenNumeric_03_05.setIcon( spacer('0', 1) );
-		jLabelRadioClientClockScreenNumeric_04_05.setIcon( number('2', 1) );
-		jLabelRadioClientClockScreenNumeric_05_05.setIcon( number('0', 1) );
-		jLabelRadioClientClockScreenNumeric_06_05.setIcon( spacer('0', 1) );
-		jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter('J', 1) );
-		jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter('U', 1) );
-		jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter('I', 1) );
-		jLabelRadioClientClockScreenNumeric_10_05.setIcon( letter('L', 1) );
-		jLabelRadioClientClockScreenNumeric_11_05.setIcon( spacer('0', 1) );
-		jLabelRadioClientClockScreenNumeric_12_05.setIcon( number('2', 1) );
-		jLabelRadioClientClockScreenNumeric_13_05.setIcon( number('0', 1) );
-		jLabelRadioClientClockScreenNumeric_14_05.setIcon( number('2', 1) );
-		jLabelRadioClientClockScreenNumeric_15_05.setIcon( number('2', 1) );
+		jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('R'), -1, 16777215), 1) );
 		
+		jLabelRadioClientClockScreenNumeric_03_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
 		
+		jLabelRadioClientClockScreenNumeric_04_05.setIcon( resize( recolorize( number('2'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_05_05.setIcon( resize( recolorize( number('0'), -1, 16777215), 1) );
 		
+		jLabelRadioClientClockScreenNumeric_06_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
 		
+		jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('J'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('U'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('I'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( letter('L'), -1, 16777215), 1) );
 		
+		jLabelRadioClientClockScreenNumeric_11_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
 		
+		jLabelRadioClientClockScreenNumeric_12_05.setIcon( resize( recolorize( number('2'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_13_05.setIcon( resize( recolorize( number('0'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_14_05.setIcon( resize( recolorize( number('2'), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_15_05.setIcon( resize( recolorize( number('2'), -1, 16777215), 1) );
 		
 		gridBagConstraintsRadioClientClockScreenNumeric.fill = GridBagConstraints.HORIZONTAL;
 		gridBagConstraintsRadioClientClockScreenNumeric.gridwidth = 3;
@@ -302,27 +302,6 @@ public class JPanelRadioClientClockScreenNumeric extends JPanelStructure
 		gridBagConstraintsRadioClientClockScreenNumeric.gridx = 15;
 		gridBagConstraintsRadioClientClockScreenNumeric.gridy = 5;
 		this.add(jLabelRadioClientClockScreenNumeric_15_05, gridBagConstraintsRadioClientClockScreenNumeric);
-
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		// Création du Thread Time
 		ThreadTimeRadioClientClockScreenNumeric threadTimeRadioClientClockScreenNumeric = new ThreadTimeRadioClientClockScreenNumeric();
@@ -349,207 +328,217 @@ public class JPanelRadioClientClockScreenNumeric extends JPanelStructure
 		String yearC = year_.substring(1, 2);
 		String yearD = year_.substring(2, 3);
 		String yearU = year_.substring(3, 4);
-				
-		jLabelRadioClientClockScreenNumeric_00_00.setIcon( number( hourD.charAt(0), 3 ) );
-		jLabelRadioClientClockScreenNumeric_03_00.setIcon( number( hourU.charAt(0), 3 ) );
 
-		jLabelRadioClientClockScreenNumeric_09_00.setIcon( number( minuteD.charAt(0), 3 ) );
-		jLabelRadioClientClockScreenNumeric_12_00.setIcon( number( minuteU.charAt(0), 3 ) );
+		jLabelRadioClientClockScreenNumeric_00_00.setIcon( resize( recolorize( number( hourD.charAt(0) ), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_03_00.setIcon( resize( recolorize( number( hourU.charAt(0) ), -1, 16777215), 3) );
 		
-		jLabelRadioClientClockScreenNumeric_17_00.setIcon( number( secondeD.charAt(0), 2 ) );
-		jLabelRadioClientClockScreenNumeric_19_00.setIcon( number( secondeU.charAt(0), 2 ) );
+		jLabelRadioClientClockScreenNumeric_09_00.setIcon( resize( recolorize( number( minuteD.charAt(0) ), -1, 16777215), 3) );
+		jLabelRadioClientClockScreenNumeric_12_00.setIcon( resize( recolorize( number( minuteU.charAt(0) ), -1, 16777215), 3) );
+		
+		jLabelRadioClientClockScreenNumeric_17_00.setIcon( resize( recolorize( number( secondeD.charAt(0) ), -1, 16777215), 2) );
+		jLabelRadioClientClockScreenNumeric_19_00.setIcon( resize( recolorize( number( secondeU.charAt(0) ), -1, 16777215), 2) );
 		
 		if( dayOfWeek_.equals( "1" ) ) 
 		{ 
-			
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'L', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'U', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'N', 1 ) );
+
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('L'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('U'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('N'), -1, 16777215), 1) );
 
 		}
-		
+
 		if( dayOfWeek_.equals( "2" ) ) 
 		{
-			
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'M', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'A', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'R', 1 ) );
+
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('R'), -1, 16777215), 1) );
 
 		}
 		
 		if( dayOfWeek_.equals( "3" ) ) 
 		{ 
-			
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'M', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'E', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'R', 1 ) );
+
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('R'), -1, 16777215), 1) );
 
 		}
 		
 		if( dayOfWeek_.equals( "4" ) ) 
 		{ 
 
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'J', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'E', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'U', 1 ) );
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('J'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('U'), -1, 16777215), 1) );
 
 		}
 
 		if( dayOfWeek_.equals( "5" ) ) 
 		{ 
 
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'V', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'E', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'N', 1 ) );
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('V'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('N'), -1, 16777215), 1) );
 
 		}
 
 		if( dayOfWeek_.equals( "6" ) ) 
 		{
 
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'S', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'A', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'M', 1 ) );
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('S'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
 
 		}
 
 		if( dayOfWeek_.equals( "7" ) ) 
 		{
 
-			jLabelRadioClientClockScreenNumeric_00_05.setIcon( letter( 'D', 1 ) );
-			jLabelRadioClientClockScreenNumeric_01_05.setIcon( letter( 'I', 1 ) );
-			jLabelRadioClientClockScreenNumeric_02_05.setIcon( letter( 'M', 1 ) );
+			jLabelRadioClientClockScreenNumeric_00_05.setIcon( resize( recolorize( letter('D'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_01_05.setIcon( resize( recolorize( letter('I'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_02_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
 
 		}
 
-		jLabelRadioClientClockScreenNumeric_04_05.setIcon( number( dayD.charAt(0), 1 ) );
-		jLabelRadioClientClockScreenNumeric_05_05.setIcon( number( dayU.charAt(0), 1 ) );
+		jLabelRadioClientClockScreenNumeric_04_05.setIcon( resize( recolorize( number( dayD.charAt(0) ), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_05_05.setIcon( resize( recolorize( number( dayU.charAt(0) ), -1, 16777215), 1) );
 		
 		if( month_.equals( "01" ) ) 
 		{ 
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'J', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'A', 1 ) ); 
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'N', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('J'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('N'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "02" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'F', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'E', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'V', 1 ) ); 
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('F'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('V'), -1, 16777215), 1) ); 
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "03" ) ) 
 		{ 
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'M', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'A', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'R', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('R'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "04" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'A', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'V', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'R', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('V'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('R'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "05" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'M', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'A', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'I', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('M'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('I'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "06" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'J', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'U', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'I', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( letter( 'N', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('J'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('U'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('I'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( letter('N'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "07" ) ) 
-		{ 
-
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'J', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'U', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'I', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( letter( 'L', 1 ) );
+		{
 			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('J'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('U'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('I'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( letter('L'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "08" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'A', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'O', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'U', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('A'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('O'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('U'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
 
 		}
-		
-		if( month_.equals( "09" ) ) 
-		{ 
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'S', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'E', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'P', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+		if( month_.equals( "09" ) ) 
+		{
+
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('S'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('P'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 		
 		if( month_.equals( "10" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'O', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'C', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'T', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
-			
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('O'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('C'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('T'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
+
 		}
 
 		if( month_.equals( "11" ) ) 
-		{ 
+		{
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'N', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'O', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'V', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('N'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('O'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('V'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
 
 		}
 		
 		if( month_.equals( "12" ) ) 
 		{ 
 
-			jLabelRadioClientClockScreenNumeric_07_05.setIcon( letter( 'D', 1 ) );
-			jLabelRadioClientClockScreenNumeric_08_05.setIcon( letter( 'E', 1 ) );
-			jLabelRadioClientClockScreenNumeric_09_05.setIcon( letter( 'C', 1 ) );
-			jLabelRadioClientClockScreenNumeric_10_05.setIcon( spacer( '0', 1 ) );
+			jLabelRadioClientClockScreenNumeric_07_05.setIcon( resize( recolorize( letter('D'), -1, 16777215), 1) );
+			jLabelRadioClientClockScreenNumeric_08_05.setIcon( resize( recolorize( letter('E'), -1, 16777215), 1) ); 
+			jLabelRadioClientClockScreenNumeric_09_05.setIcon( resize( recolorize( letter('C'), -1, 16777215), 1) );
+
+			jLabelRadioClientClockScreenNumeric_10_05.setIcon( resize( recolorize( spacer('0'), -1, 16777215), 1) );
 
 		}
-		
-		jLabelRadioClientClockScreenNumeric_12_05.setIcon( number( yearM.charAt(0), 1 ) );
-		jLabelRadioClientClockScreenNumeric_13_05.setIcon( number( yearC.charAt(0), 1 ) );
-		jLabelRadioClientClockScreenNumeric_14_05.setIcon( number( yearD.charAt(0), 1 ) );
-		jLabelRadioClientClockScreenNumeric_15_05.setIcon( number( yearU.charAt(0), 1 ) );	
-		
+
+		jLabelRadioClientClockScreenNumeric_12_05.setIcon( resize( recolorize( number( yearM.charAt(0) ), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_13_05.setIcon( resize( recolorize( number( yearC.charAt(0) ), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_14_05.setIcon( resize( recolorize( number( yearD.charAt(0) ), -1, 16777215), 1) );
+		jLabelRadioClientClockScreenNumeric_15_05.setIcon( resize( recolorize( number( yearU.charAt(0) ), -1, 16777215), 1) );	
+
 	}
 	
 	// Thread Radio Client Clock Screen Numeric

@@ -177,107 +177,50 @@ public abstract class JPanelStructure extends JPanel
 	}
 	
 	// Génération espacement
-	protected ImageIcon spacer( char c, int size )
+	protected ImageIcon spacer( char c)
 	{
 		
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("spacer_" + c + ".png") );
-		
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-
-		return imageIcon;
+		return new ImageIcon( this.getClass().getResource("spacer_" + c + ".png") );
 
 	}
 
 	// Génération nombre
-	protected ImageIcon number( char c, int size )
+	protected ImageIcon number( char c)
 	{
 		
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("number_" + c + ".png") );
-		
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-		
-		return imageIcon;
+		return new ImageIcon( this.getClass().getResource("number_" + c + ".png") );
 
 	}
 	
 	// Génération lettre
-	protected ImageIcon letter( char c, int size )
+	protected ImageIcon letter( char c)
 	{
 		
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("letter_" + c + ".png") );
-
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-
-		return imageIcon;
+		return new ImageIcon( this.getClass().getResource("letter_" + c + ".png") );
 
 	}
 	
 	// Génération hour
-	/*
-	protected ImageIcon hour( String hour_, String minute_, int size )
+	protected ImageIcon hour( String hour_, String minute_)
 	{
 
-		// ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_700x340_hour_" + s + ".png") );
-
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-
-		return imageIcon;
+		return new ImageIcon( this.getClass().getResource("analogic_700x340_hour_" + hour_ + "_"+ minute_ + ".png") );
 
 	}
-	*/
-	
 	
 	// Génération minute	
-	protected ImageIcon minute( String minute_, int size )
+	protected ImageIcon minute( String minute_)
 	{
 
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_700x340_minute_" + minute_ + ".png") );
-
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-
-		return imageIcon;
+		return new ImageIcon( this.getClass().getResource("analogic_700x340_minute_" + minute_ + ".png") );
 
 	}
 	
 	// Génération seconde
-	protected ImageIcon seconde( String s, int size )
+	protected ImageIcon seconde( String seconde_)
 	{
 
-		ImageIcon imageIcon = new ImageIcon( this.getClass().getResource("analogic_700x340_seconde_" + s + ".png") );
-
-		if( size < 4 )
-		{
-		
-			imageIcon = resize( imageIcon, size );
-			
-		}
-
-		return imageIcon;
+		return new ImageIcon( this.getClass().getResource("analogic_700x340_seconde_" + seconde_ + ".png") );
 
 	}
 	
