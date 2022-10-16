@@ -136,14 +136,4 @@ public class JPanelRadioClientClockScreenAnalogic extends JPanelStructure
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
